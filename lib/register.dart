@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:sentimentanalysis/home.dart';
 
-
 class RegistrationScreen extends StatefulWidget {
   @override
   _RegistrationScreenState createState() => _RegistrationScreenState();
@@ -23,7 +22,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       // User has been registered
       print("User registered: ${userCredential.user?.email}");
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
+          context, MaterialPageRoute(builder: (context) => ChatScreen()));
     } catch (e) {
       print("Error registering user: $e");
     }

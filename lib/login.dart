@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
       );
       // Navigate to the next screen upon successful login
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
+          context, MaterialPageRoute(builder: (context) => ChatScreen()));
     } catch (e) {
       print("Error: $e");
     }
